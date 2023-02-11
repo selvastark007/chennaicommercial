@@ -34,22 +34,7 @@ import Select from '@mui/material/Select';
 
 const Home = () => {
 
-  const [propertyType, setPropertyType] = React.useState('');
-  const handleChange = (event) => {
-    setPropertyType(event.target.value);
-  }
-
-  const [type, setType] = React.useState('');
-  const handleChange2 = (event) => {
-    setType(event.target.value);
-  }
-
-  const [location, setLocation] = React.useState('');
-  const handleChange3 = (event) => {
-    setLocation(event.target.value);
-  }
-
-
+  
 
   return (
     <>
@@ -107,7 +92,7 @@ const Home = () => {
             </div>
           </Container>
         </div>
-        {/* Section 2 start */}
+        {/* Section 2 end */}
 
         {/* Service section start */}
         <div className="service-wrapper">
