@@ -160,7 +160,7 @@ const Innerpage = () => {
                           <img src={innerImg3} alt="inner-img" />
                         </div>
                         <div>
-                          <img src={innerImg} alt="inner-img" />
+                          <img src={innerImg3} alt="inner-img" />
                         </div>
                       </Carousel>
                       <div className="social-icons d-flex justify-content-between">
