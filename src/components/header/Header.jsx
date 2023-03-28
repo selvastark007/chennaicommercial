@@ -49,16 +49,16 @@ const Header = () => {
                             <Navbar.Toggle aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="mx-auto">
-                                    <NavLink as={Link} to="/">Home</NavLink>
-                                    <NavLink as={Link} to="/it-parks-chennai">IT Parks in Chennai</NavLink>
-                                    <NavLink as={Link} to="/properties-for-sale" className='hover-dropdown-head2'>Properties For Sale</NavLink>
-                                    <NavLink as={Link} to='/p' className='hover-dropdown-head' > Properties <MdOutlineArrowDropDown/>
+                                    <NavLink as={Link} to="/" className='lineHeight'>Home</NavLink>
+                                    <NavLink as={Link} to="/description" className='lineHeight'>IT Parks in Chennai</NavLink>
+                                    <NavLink as={Link} to="/filter2" className='lineHeight'>Properties For Sale</NavLink>
+                                    <NavLink as={Link} to="/"  className='hover-dropdown-head lineHeight'  > Properties <MdOutlineArrowDropDown/>
 
                                         <ul className='hover-dropdown'>
                                         {
                                             headerDatas.map((headerData) => {
                                                 return (
-                                                    <div key={headerData.id} >
+                                                    <div key={headerData.id}  >
                                                         <NavLink  as={Link} to={headerData.path} className='hover-dropdown-link'>{headerData.navDropDownLInk}</NavLink>
                                                     </div>
                                                 )
@@ -81,9 +81,9 @@ const Header = () => {
 
                                     </NavDropdown>
 
-                                    <NavLink as={Link} to="/contact">Contact Us</NavLink>
+                                    <NavLink as={Link} to="/contact" className='lineHeight'>Contact Us</NavLink>
                                 </Nav>
-                                <NavLink as={Link} to="/enquiery" className='enquiery'>Get a Free Quote</NavLink>
+                                <NavLink as={Link} to="/thankyou" className='enquiery'>Get a Free Quote</NavLink>
                             </Navbar.Collapse>
                         </Container>
                     </Navbar>

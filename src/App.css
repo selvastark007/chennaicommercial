@@ -1,27 +1,48 @@
 /* universel selector */
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
-img{
+img {
   width: 100%;
   height: 100%;
 }
-li{
+li {
   list-style-type: none;
 }
 
 /* Roots colors */
-:root{
-  --primary-color      : #000D3C;
-  --bg-color             : #D1E6EF;
-  --button-gredient   : linear-gradient(90deg, rgba(20,78,173,1) 5%, rgba(0,13,60,1) 54%);
-  --text-gredient      : linear-gradient(90deg, rgba(189,47,73,1) 0%, rgba(119,13,115,1) 34%, rgba(0,35,119,1) 75%);
+:root {
+  --primary-color: #000d3c;
+  --bg-color: #d1e6ef;
+  --button-gredient: linear-gradient(
+    90deg,
+    rgba(20, 78, 173, 1) 5%,
+    rgba(0, 13, 60, 1) 54%
+  );
+  --hover-button: linear-gradient(
+    90deg,
+    rgba(0, 13, 60, 1) 5%,
+    rgba(20, 78, 173, 1) 54%
+  );
+  --text-gredient: linear-gradient(
+    90deg,
+    rgba(189, 47, 73, 1) 0%,
+    rgba(119, 13, 115, 1) 34%,
+    rgba(0, 35, 119, 1) 75%
+  );
 }
 
-.container{
+.container {
   max-width: 90% !important;
+}
+.form-control {
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
 }

@@ -1,0 +1,144 @@
+{
+    "data": [
+        {
+            "locality": {
+                "locationName": "golden rock",
+                "pincode": 620004,
+                "district": "tiruchirapalli",
+                "state": "tamilnadu"
+            },
+            "_id": "63fa267eeaf97c32b135f2c4",
+            "title": "land of land, one is onessss",
+            "urlSlug": "land-of-land",
+            "localityId": {
+                "_id": "63f78aa943ad51e5459c816a",
+                "locationName": "golden rock",
+                "pincode": 620004,
+                "district": "tiruchirapalli",
+                "state": "tamilnadu"
+            },
+            "propertyType": "Sale",
+            "amenities": [
+                {
+                    "_id": "63f789f1023e46f73bf0e668",
+                    "name": "electric cooker"
+                },
+                {
+                    "_id": "63f4fb5972ad28bfe8242272",
+                    "name": "electric box"
+                }
+            ],
+            "images": [
+                "file-2023-02-25-20:48:56-4uGCUhb0nu-4qZZ4k4EHj.jpg",
+                "file-2023-03-01-19:09:45-ef8TYjBEHJIdjw61qNLyc.jpg",
+                "file-2023-03-01-19:13:50-TDNp3ZcV4SaL6VcNGcmFT.jpg"
+            ],
+            "createdAt": "2023-02-25T15:17:18.971Z",
+            "updatedAt": "2023-03-04T11:16:51.415Z",
+            "__v": 0
+        },
+        {
+            "locality": {
+                "locationName": "golden rock",
+                "pincode": 620004,
+                "district": "tiruchirapalli",
+                "state": "tamilnadu"
+            },
+            "_id": "63f78b92e431c66cecd72925",
+            "title": "member ship month is is near by",
+            "urlSlug": "london-space-in-germany-and-india-and-trichy",
+            "localityId": {
+                "_id": "63f78aa943ad51e5459c816a",
+                "locationName": "golden rock",
+                "pincode": 620004,
+                "district": "tiruchirapalli",
+                "state": "tamilnadu"
+            },
+            "propertyType": "Rent",
+            "amenities": [
+                {
+                    "_id": "63f7a0cb92efbaabcea2cc79",
+                    "name": "fan"
+                },
+                {
+                    "_id": "63f7a0c492efbaabcea2cc72",
+                    "name": "television"
+                },
+                {
+                    "_id": "63f789f1023e46f73bf0e668",
+                    "name": "electric cooker"
+                },
+                {
+                    "_id": "63f4fb5972ad28bfe8242272",
+                    "name": "electric box"
+                },
+                {
+                    "_id": "63f4fb5372ad28bfe824226f",
+                    "name": "wifi"
+                },
+                {
+                    "_id": "63f4fb4e72ad28bfe824226a",
+                    "name": "cooker"
+                }
+            ],
+            "images": [
+                "file-2023-02-23-23:06:33-If0h6RFM1aTG_Rf9FhlLI.jpg",
+                "file-2023-02-23-23:06:33-eWfKEGEqp9zMvz0dzuZpe.jpg",
+                "file-2023-02-23-23:08:42-mSTD87w2_RxnEpBtCoHKL.jpeg",
+                "file-2023-02-23-23:08:42-ObYccIcY4hXENziKdjMRf.jpg",
+                "file-2023-02-23-23:08:42-9MaxCaK6wAT7j4DZEDQN5.jpg"
+            ],
+            "createdAt": "2023-02-23T15:51:46.746Z",
+            "updatedAt": "2023-02-23T17:38:42.771Z",
+            "__v": 0
+        },
+        {
+            "locality": {
+                "locationName": "tiruvallikkeni",
+                "pincode": 600005,
+                "district": "chennai",
+                "state": "tamilnadu"
+            },
+            "_id": "63f4fca10075422656578af2",
+            "title": "may month is is near by",
+            "urlSlug": "london-space-in-germany-and-india-and-trichy",
+            "localityId": {
+                "_id": "63f4fb8872ad28bfe8242280",
+                "locationName": "tiruvallikkeni",
+                "pincode": 600005,
+                "district": "chennai",
+                "state": "tamilnadu"
+            },
+            "propertyType": "Rent",
+            "createdAt": "2023-02-21T17:17:21.918Z",
+            "updatedAt": "2023-02-23T14:56:34.861Z",
+            "__v": 0,
+            "amenities": [
+                {
+                    "_id": "63f4fb5972ad28bfe8242272",
+                    "name": "electric box"
+                },
+                {
+                    "_id": "63f4fb5372ad28bfe824226f",
+                    "name": "wifi"
+                },
+                {
+                    "_id": "63f4fb4e72ad28bfe824226a",
+                    "name": "cooker"
+                }
+            ],
+            "images": [
+                "file-2023-02-22-10:44:38-3AIcIB5B5Iigl4QtJBR0y.jpg",
+                "file-2023-02-22-10:44:38-7KlTwaKA9JYPzOjoRcG4s.jpg",
+                "file-2023-02-22-10:44:38-30xOJjVpYZTz2msdUW_cV.jpg",
+                "file-2023-02-22-10:44:38-h1HaMTO_KlwT8l-4K34LR.jpg"
+            ]
+        }
+    ],
+    "meta": {
+        "currentPage": 1,
+        "numberOfPages": 1,
+        "count": 3,
+        "pageSize": 8
+    }
+}

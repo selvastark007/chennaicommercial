@@ -14,7 +14,7 @@ import Container from 'react-bootstrap/Container';
 import './Footer.scss'
 
 // data
-import { headerDatas } from '../data/DataHome'
+// import { headerDatas } from '../data/DataHome'
 
 const Footer = () => {
     return (
@@ -34,7 +34,7 @@ const Footer = () => {
                             <div className='d-flex envelope'> <BsFillEnvelopeFill /> <a href="maito:chennaicommercials@gmail.com">chennaicommercials@gmail.com</a></div>
 
                         </div>
-                        <div className="popular-location d-flex">
+                        {/* <div className="popular-location d-flex">
                             <h4>Popular Locations</h4>
                             {
                                 headerDatas.map((headerData) => {
@@ -45,10 +45,10 @@ const Footer = () => {
                                 })
                             }
 
-                        </div>
+                        </div> */}
                         <div className="quick-links d-flex">
                             <h4>Quick Links</h4>
-                            <Link to='/'>About</Link>
+                            <Link to='/about'>About</Link>
                             <Link to='/'>Blog</Link>
                             <Link to='/'>Sell Your Office</Link>
                             <Link to='/'>Rent Office</Link>

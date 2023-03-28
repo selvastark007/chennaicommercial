@@ -1,4 +1,9 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
+import Axios from "axios";
+
+// tooltip
+import { Tooltip as ReactTooltip } from 'react-tooltip'
+import 'react-tooltip/dist/react-tooltip.css'
 
 // Bootstarp
 import Container from 'react-bootstrap/Container';
@@ -8,7 +13,7 @@ import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom'
 
 // Data
-import { services, newProperties, saleProperties, settings, settings2 } from '../../components/data/DataHome'
+import { services, saleProperties, settings2 } from '../../components/data/DataHome'
 
 // slik corousel
 import Slider from 'react-slick';
@@ -19,35 +24,41 @@ import 'slick-carousel/slick/slick-theme.css';
 import './Home.scss'
 
 // icons
-import { FiSearch } from 'react-icons/fi'
 import { MdLocationOn } from 'react-icons/md'
-
-// material ui
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-
-
 
 
 const Home = () => {
 
-  const [propertyType, setPropertyType] = React.useState('');
-  const handleChange = (event) => {
-    setPropertyType(event.target.value);
-  }
+  // const [propertyType, setPropertyType] = React.useState('');
+  // const handleChange = (event) => {
+  //   setPropertyType(event.target.value);
+  // }
 
-  const [type, setType] = React.useState('');
-  const handleChange2 = (event) => {
-    setType(event.target.value);
-  }
+  // const [type, setType] = React.useState('');
+  // const handleChange2 = (event) => {
+  //   setType(event.target.value);
+  // }
 
-  const [location, setLocation] = React.useState('');
-  const handleChange3 = (event) => {
-    setLocation(event.target.value);
-  }
+  // const [location, setLocation] = React.useState('');
+  // const handleChange3 = (event) => {
+  //   setLocation(event.target.value);
+  // }
+
+ // json place-holder api
+ const [posts, setPosts] = useState([]);
+ const [photos , setPhotos] = useState([])
+ const slicePhotos = photos.slice(4,10);
+ useEffect(() => {
+   Axios.get("https://jsonplaceholder.typicode.com/users").then((res) =>
+     setPosts(res.data)
+   );
+ }, []);
+
+ useEffect(() => {
+  Axios.get("https://jsonplaceholder.typicode.com/photos").then((res) =>
+  setPhotos(res.data)
+  );
+}, []);
 
 
 
@@ -64,9 +75,13 @@ const Home = () => {
          
               <Form.Select aria-label="Default select example">
                 <option>Property type</option>
-                <option value="Ware house rent for Chennai">Ware house rent for Chennai</option>
-                <option value="Office rent for Chennai">Office rent for Chennai</option>
-                <option value="Office for rent in IT park Chennai">Office for rent in IT park Chennai</option>
+                {
+                  posts.map((post)=> {
+                    return(
+                      <option key={post.id} value={post.name}>{post.name}</option>
+                    )
+                  })
+                }
               </Form.Select>
 
               <Form.Select aria-label="Default select example">
@@ -77,12 +92,17 @@ const Home = () => {
 
               <Form.Select aria-label="Default select example">
                 <option>Loaction</option>
-                <option value="guindy">Guindy</option>
-                <option value="ambattur">Ambattur</option> 
+                {
+                  posts.map((post)=> {
+                    return(
+                      <option key={post.id} value={post.name}>{post.name}</option>
+                    )
+                  })
+                }
               </Form.Select>
 
             
-              <button type='submit' className='submit'> Submit</button>
+              <button  type='submit' className='submit'> Submit</button>
 
             </form>
           </Container>
@@ -122,7 +142,7 @@ const Home = () => {
                   return (
                     <div className="service-img-box text-center" key={service.id}>
                       <div className="service-img">
-                      <img src={service.imgSrc} alt={service.serviceType} />
+                      <img src={service.imgSrc} alt={service.alt} />
                       </div>
                       <div className="service-content">
                       <p>{service.serviceType}</p>

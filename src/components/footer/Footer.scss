@@ -64,18 +64,10 @@
         }
       }
     }
-    .popular-location {
-      flex: 1;
-      flex-direction: column;
-      gap: 1rem;
-      a {
-        font-size: 14px;
-        color: #e5eb0b;
-      }
-    }
     .quick-links {
       flex-direction: column;
       gap: 1rem;
+      margin-left: 6rem;
       a {
         font-size: 14px;
         color: #e5eb0b;
@@ -89,29 +81,23 @@
         cursor: pointer;
         &:hover {
           transform: scale(1.5);
-          -webkit-transform: scale(1.5);
-          -moz-transform: scale(1.5);
-          -ms-transform: scale(1.5);
-          -o-transform: scale(1.5);
           transition: 0.5s;
-          -webkit-transition: 0.5s;
-          -moz-transition: 0.5s;
-          -ms-transition: 0.5s;
-          -o-transition: 0.5s;
         }
       }
     }
-    @media screen and (max-width: 992px){
-        flex-direction: column;
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
+    .quick-links{
+      margin-left: 0;
+    }
   }
-  
-  }
-  .footer-bottom{
+  .footer-bottom {
     padding: 1rem 0 !important;
-    a{
-        color:white;
-        text-decoration: none;
-        font-size: 14px;
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
     }
   }
 }

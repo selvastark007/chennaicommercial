@@ -24,17 +24,45 @@ import newSlider1 from '../../assets/images/newSlider1.jpg'
 import newSlider2 from '../../assets/images/newSlider2.jpg'
 import newSlider3 from '../../assets/images/newSlider3.jpg'
 
+// filter pages images
+import img1 from '../../assets/images/recentSearch.jpg'
+import img2 from '../../assets/images/recentSearch1.jpg'
+import img3 from '../../assets/images/recentSearch2.jpg'
+import img4 from '../../assets/images/recentSearch3.jpg'
+import img5 from '../../assets/images/recentSearch4.jpg'
+
+
+// description page icon
+
+import {MdOutlineFastfood} from 'react-icons/md'
+import { SiGoogleclassroom } from 'react-icons/si'
+import { MdOutlineManageAccounts } from 'react-icons/md'
+import { GrWorkshop } from 'react-icons/gr'
+import { SiUps } from 'react-icons/si'
+import { FiServer } from 'react-icons/fi'
+import { CgGames } from 'react-icons/cg'
+import { GrYoga } from 'react-icons/gr'
+import {MdOutlineMeetingRoom} from 'react-icons/md'
+import {GiDiscussion} from 'react-icons/gi'
+import {HiBuildingStorefront} from 'react-icons/hi2'
+import {MdOutlineFoodBank} from 'react-icons/md'
+import {CgGym} from 'react-icons/cg'
+import {FaServer} from 'react-icons/fa'
+import {RiBuilding2Fill} from 'react-icons/ri'
+import {GiSparkPlug} from 'react-icons/gi'
+import {HiOutlineCurrencyRupee} from 'react-icons/hi'
+
 
 export  const settings = {
-  dots: true,
+  dots: false,
   infinite: false,
   speed: 500,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToShow: 2,
+  slidesToScroll: 2,
   initialSlide: 0,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 800,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -45,9 +73,9 @@ export  const settings = {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 0,
       },
     },
     {
@@ -61,11 +89,14 @@ export  const settings = {
 };
 
 export const settings2 = {
-  dots: true,
+  dots: false,
   infinite: false,
-  speed: 500,
+  speed: 1000,
   slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
+  autoplay:false,
+  // autoplaySpeed:200,
+  cssEase : 'linear',
   initialSlide: 0,
   responsive: [
     {
@@ -251,4 +282,216 @@ export const newProperties = [
     },
   ]
 
-  // footer Data
+// filter data
+export const cardDatas = [
+  {
+    id : 1,
+    img : img1,
+    title : '1800 Sqft 30 Seater Furnished Office',
+    location : 'Perungudi, Chennai',
+    price : 400000,
+  },
+  {
+    id : 2,
+    img : img2,
+    title : '5000 sqft 80 seat 8 cabin Furnished',
+    location : 'Guindy, Chennai',
+    price : 458000,
+  },
+  {
+    id : 3,
+    img : img3,
+    title : '3000 sqft 40 seat 6 cabin Furnished',
+    location : 'Thambaram, Chennai',
+    price : 307000,
+  },
+  {
+    id : 4,
+    img : img4,
+    title : '1800 Sqft 30 Seater Furnished Office',
+    location : 'Kolathur, Chennai',
+    price : 650000,
+  },
+  {
+    id : 5,
+    img : img5,
+    title : '1800 Sqft 30 Seater Furnished Office',
+    location : 'Kolathur, Chennai',
+    price : 750000,
+  },
+  {
+    id : 6,
+    img : img2,
+    title : '200 Seater office for rent in Chennai',
+    location : 'Kolathur, Chennai',
+    price : 650000,
+  },
+  {
+    id : 7,
+    img : img1,
+    title : '1800 Sqft 30 Seater Furnished Office',
+    location : 'Kolathur, Chennai',
+    price : 650000,
+  },
+  {
+    id : 8,
+    img : img3,
+    title : '3000 sqft 40 seat 6 cabin Furnished',
+    location : 'Kolathur, Chennai',
+    price : 650000,
+  },
+]
+
+// Description page
+
+// interior facility data
+
+export const InteriorFacility = [
+  {
+    id : 1 ,
+    icon : <GiDiscussion/>,
+    title : 'Reception'
+  },
+  {
+    id : 2 ,
+    icon : <MdOutlineMeetingRoom/>,
+    title : 'Meeting room'
+  },
+  {
+    id : 3 ,
+    icon : <SiGoogleclassroom/>,
+    title : 'Conference room'
+  },
+  {
+    id : 4,
+    icon : <MdOutlineManageAccounts/>,
+    title : '4 manager cabin'
+  },
+  {
+    id : 5 ,
+    icon : <GrWorkshop/>,
+    title : ' 95 modular workstations'
+  },
+  {
+    id : 6 ,
+    icon : <SiUps/>,
+    title : 'UPS room'
+  },
+  {
+    id : 7 ,
+    icon : <FiServer/>,
+    title : 'Server room'
+  },
+  {
+    id : 8 ,
+    icon : <MdOutlineFastfood/>,
+    title : 'Pantry'
+  },
+]
+
+// comman facility data
+
+export const commanFacility = [
+  {
+    id : 1 ,
+    icon : <HiBuildingStorefront/>,
+    title : 'Auditorium'
+  },
+  {
+    id : 2 ,
+    icon : <MdOutlineFoodBank/>,
+    title : 'Food court'
+  },
+  {
+    id : 3 ,
+    icon : <CgGym/>,
+    title : 'Gym'
+  },
+  {
+    id : 4 ,
+    icon : <CgGames/>,
+    title : 'Indoor games'
+  },
+  {
+    id : 5 ,
+    icon : <GrYoga/>,
+    title : 'Yoga center'
+  },
+  {
+    id : 6 ,
+    icon : <GiSparkPlug/>,
+    title : ' Outdoor gardening and landscape'
+  },
+  {
+    id : 7 ,
+    icon : <MdOutlineFastfood/>,
+    title : 'Pantry'
+  },
+  {
+    id : 8 ,
+    icon : <FaServer/>,
+    title : 'Server room'
+  },
+  {
+    id : 9 ,
+    icon : <RiBuilding2Fill/>,
+    title : 'Plug & play office space suits for IT / ITES companies.'
+  },
+]
+
+// commercial data
+ export const commercial = [
+  {
+    id : 1 ,
+    icon : <HiOutlineCurrencyRupee/>,
+    title : 'Rent  :  Rs. 65 / sqft'
+  },
+  {
+    id : 2 ,
+    icon : <HiOutlineCurrencyRupee/>,
+    title : 'Maintenance :  Rs. 9.5 / sqft'
+  },
+ ]
+
+//  filtter page data
+export const FeaturedListing = [
+  {
+    id :1,
+    img : img1,
+    location : 'Ambattur , Chennai',
+    sqft : '4800 sqft'
+  },
+  {
+    id :2,
+    img : img3,
+    location : 'Guindy , Chennai',
+    sqft : '3200 sqft'
+  },
+  {
+    id :3,
+    img : img4,
+    location : 'Thambaram , Chennai',
+    sqft : '5100 sqft'
+  },
+]
+
+export const RecentSearch = [
+  {
+    id :1,
+    img : img2,
+    location : 'Red Hills , Chennai',
+    sqft : '2500 sqft'
+  },
+  {
+    id :2,
+    img : img1,
+    location : 'T.Nagar , Chennai',
+    sqft : '3900 sqft'
+  },
+  {
+    id :3,
+    img : img5,
+    location : 'Ambattur , Chennai',
+    sqft : '4800 sqft'
+  },
+]
