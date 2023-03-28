@@ -1,7 +1,6 @@
 {
   "name": "chennai-commercial",
   "version": "0.1.0",
-  "homepage": "https://www.webdads2u.in/demo/chennaicommercial/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
