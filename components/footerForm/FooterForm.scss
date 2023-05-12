@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #000d3c;
+  --bg-color: #d1e6ef;
+  --button-gredient: linear-gradient(
+    90deg,
+    rgba(20, 78, 173, 1) 5%,
+    rgba(0, 13, 60, 1) 54%
+  );
+  --text-gredient: -webkit-linear-gradient(
+    30deg,
+    rgb(230, 95, 17) 10%,
+    rgba(119, 13, 115, 1) 64%,
+    rgba(0, 35, 119, 1) 95%
+  );
+}
+.footer-form-wrapper {
+  background: var(--bg-color);
+
+  .footer-form {
+    background: var(--primary-color);
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    gap: 2rem;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    p {
+      color: #fff;
+    }
+    button {
+      padding: 1rem;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      font-size: 600;
+      transition: 0.5s;
+      &:hover{
+        background: #F1CD13;
+      }
+    }
+    @media screen and (max-width:552px) {
+        flex-direction: column;
+        font-size: 20px;
+      }
+  }
+ 
+}
