@@ -25,6 +25,8 @@ import './Home.scss'
 
 // icons
 import { MdLocationOn } from 'react-icons/md'
+import FooterBannerAndClientLogo from '../../components/footerBannerAndClient/FooterBannerAndClientLogo';
+import FooterForm from '../../components/footerForm/FooterForm';
 
 
 const Home = () => {
@@ -208,6 +210,12 @@ const Home = () => {
         {/* sale property section end */}
 
       </div >
+           {/* footer banner and client logo start */}
+           <FooterBannerAndClientLogo />
+            {/* footer banner and client logo  end*/}
+            {/* footer form start */}
+            <FooterForm />
+            {/* footer form end */}
     </>
   )
 }
